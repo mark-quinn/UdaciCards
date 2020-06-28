@@ -16,7 +16,7 @@ Clone the project and then run the start up scripts shown below.
 Clone the project.
 
 ```bash
-git clone 
+git clone git@github.com:mark-quinn/UdaciCards.git
 ```
 
 Change directory
