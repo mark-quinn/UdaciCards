@@ -21,7 +21,7 @@ git clone git@github.com:mark-quinn/UdaciCards.git
 
 Change directory
 ```bash
-cd udacity-nd-UdaciCards-p3
+cd UdaciCards
 ```
 
 Intall dependencies
