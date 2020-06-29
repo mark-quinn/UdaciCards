@@ -1,4 +1,4 @@
-import { ADD_DECK, ADD_QUESTION } from "../actions";
+import { ADD_DECK, ADD_QUESTION, DELETE_DECK } from "../actions";
 import { setInitialData } from "../utils/api";
 
 function decks(state = setInitialData(), action) {
@@ -12,14 +12,14 @@ function decks(state = setInitialData(), action) {
         },
       };
     case ADD_QUESTION:
-      const { question, answer, checked } = action.question;
+      const { question, answer } = action.question;
       const { title } = action;
 
       return {
         ...state,
         [title]: {
           ...state[title],
-          questions: [...state[title].questions, { answer, question, correct: checked }],
+          questions: [...state[title].questions, { answer, question }],
         },
       };
     default:

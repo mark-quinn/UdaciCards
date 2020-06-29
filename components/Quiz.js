@@ -21,13 +21,11 @@ class Quiz extends Component {
   handleAnswer = (choice) => {
     const { questions } = this.props;
     const { currentQuestion } = this.state;
-    const question = questions[currentQuestion];
-    const answer = choice === "Correct" ? true : false;
 
     this.setState((prevState) => ({
       currentQuestion: ++prevState.currentQuestion,
       correctAnswers:
-        answer === question.correct
+        choice === "Correct"
           ? ++prevState.correctAnswers
           : prevState.correctAnswers,
     }));

@@ -34,4 +34,7 @@ Start development server
 expo start
 ```
 
+Testing
+Was tested on an Android device using the Expo app.
+
 The project was bootstrapped with [Create React Native App](https://github.com/expo/create-react-native-app)
