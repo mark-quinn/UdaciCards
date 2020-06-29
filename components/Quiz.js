@@ -28,6 +28,7 @@ class Quiz extends Component {
         choice === "Correct"
           ? ++prevState.correctAnswers
           : prevState.correctAnswers,
+      displayAnswer: false,
     }));
   };
 
